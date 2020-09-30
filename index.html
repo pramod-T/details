@@ -5,97 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav>
         <ul>
-            <li>ProGrad</li>
+            <li class="text">ProGrad</li>
             <li>
                 <ul>
-                    <li>HOME</li>
-                    <li>BIO</li>
-                    <li>PORTFOLIO</li>
-                    <li>SKILLS</li>
-                    <li>CONTACT</li>
+                    <li><a href="#home" class="link">HOME</a></li>
+                    <li><a href="#bio" class="link">BIO</a></li>
+                    <li><a href="#portfolio" class="link">PORTFOLIO</a></li>
+                    <li><a href="#skills" class="link">SKILLS</a></li>
+                    <li><a href="#contact" class="link button">CONTACT</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
-    <header>
+    <header id="home">
         <div>
             <p> I BELIVE IN</p>
             <h1>EAT(); SLEEP(); CODE(); REPEAT();</h1>
         </div>
     </header>
-    <section>
+    <section id="bio">
         <img src="./assets/photo.jpg.jpg" alt="photo">
         <article>
             <h2>TEEPIREDDY PRAMOD REDDY</h2>
-            <p>I am pramod recently completed my Btech and looking for a job where i can show case my abilities and
-                learn new things for my growth and for the organization</p>
-            <a href="#">Download my Resume</a>
+            <p>I am pramod recently completed my Btech in computer science engineering
+                and looking for a job where i can show case my abilities and
+                learn new things for my growth and for the organization
+                <span class="break"></span>
+                Recently, i have taken a full stack development program with FACE.
+                I have knowledge in html,css,javaScript,java,c and Data Structures.
+            </p>
+            <a href="#" class="button">Download my Resume</a>
         </article>
     </section>
-    <section>
+    <section id="portfolio">
         <h3>PORTFOLIO</h3>
         <p>some of best projects so far</p>
         <hr>
         <div>
             <article>
-                <img src="" alt="">
+                <img src="./assets/code.png" alt="code" width="100" height="100" align:middle>
                 <h4>PERSONAL BLOG</h4>
                 <p>A blog where i pen my own thoughts</p>
             </article>
             <article>
-                <img src="" alt="">
+                <img src="./assets/code.png" alt="code" width="100" height="100" align:middle>
                 <h4>TIC TAC TOE</h4>
                 <p>tic toac toc game</p>
             </article>
             <article>
-                <img src="" alt="">
+                <img src="./assets/code.png" alt="code" width="100" height="100" align:middle>
                 <h4>TIME TABLE GENERATOR</h4>
                 <p>A web application for academic timetable generator</p>
             </article>
         </div>
     </section>
-    <section>
+    <section id="skills">
         <h3>SKILLS</h3>
-        <div>
+        <div id="skills-container">
             <div>
                 <h4>TECHNICAL SKILLS</h4>
                 <ul>
                     <li>html</li>
-                    <li>
-                        <progress></progress>
-                    </li>
+                    <li><progress max="100" value="80"></progress></li>
                     <li>css</li>
-                    <li><progress></progress></li>
+                    <li><progress max="100" value="80"></progress></li>
                     <li>js</li>
-                    <li><progress></progress></li>
+                    <li><progress max="100" value="60"></progress></li>
                     <li>Python</li>
-                    <li><progress></progress></li>
+                    <li><progress max="100" value="70"></progress></li>
                     <li>Java</li>
-                    <li><progress></progress></li>
+                    <li><progress max="100" value="60"></progress></li>
                 </ul>
             </div>
             <div>
                 <h4>LANGUAGES</h4>
                 <ul>
                     <li>English</li>
-                    <li><progress></progress></li>
+                    <li><progress max="100" value="70"></progress></li>
                     <li>Hindi</li>
-                    <li><progress></progress></li>
+                    <li><progress max="100" value="60"> max="100" value="80"</progress></li>
                     <li>Telugu</li>
-                    <li><progress></progress></li>
+                    <li><progress max="100" value="1000"></progress></li>
                 </ul>
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="contact">
         <h3>CONTACT</h3>
         <form action="">
-            <input type="text" placeholder="ENTER YOUR NAME">
-            <input type="text" placeholder="ENTER YOUR EMAIL">
-            <input type="text" placeholder="ENTER YOUR MESSAGE">
-            <input type="submit" value="send message" </form> </footer> </body> </html>
+            <input class="input" type="text" placeholder="ENTER YOUR NAME">
+            <input class="input" type="text" placeholder="ENTER YOUR EMAIL">
+            <input class="input" type="text" placeholder="ENTER YOUR MESSAGE">
+            <input type="submit" class="button" value="send message" </form> </footer> </body> </html>
